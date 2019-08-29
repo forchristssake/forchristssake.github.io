@@ -10,10 +10,39 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.misVis {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#whoAreWe {
+  margin-bottom: 6em;
+}
+
+.middlePics {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 5%;
+
+}
+
 #ourPics {
   background: url('../img/smallsproulbg.jpg');
   background-size: cover;
 
+}
+
+.footer-section {
+  padding-bottom: 10px;
+}
+
+.middleText {
+  margin-left: 1.4em;
+  margin-right: 1.4em;
 }
 
 :root {
