@@ -10670,11 +10670,11 @@ hr.light {
   transition: 0.15s;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item {
   color: #b50707;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active {
+#mainNav .navbar-nav .nav-item {
   color: #b50707 !important;
 }
 
