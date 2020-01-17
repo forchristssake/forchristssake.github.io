@@ -10889,3 +10889,67 @@ hr.sep-3::after {
   padding: 1rem;
   background-color: white;
 }
+
+
+
+
+
+.panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: #f0f0f0;
+  border-color: #EEEEEE;
+}
+
+.panel-title {
+  font-size: 1rem;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  margin-bottom: 0px;
+}
+
+.panel-title {
+  margin-bottom: 0px;
+}
+
+.panel-title:hover > a {
+  color: #b50707;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+
+.panel-body {
+  margin-top: 0rem;
+  padding: 1rem 2rem 1.5rem 2rem;
+  background-color: #fcfcfc;
+}
+
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
