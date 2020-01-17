@@ -10,6 +10,39 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ section::before,
+ section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+ }
+
+ .ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: #2072a7;
+ }
+
+ .ss-style-doublediagonal::before,
+ .ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  transform: rotate(-2deg);
+  transform-origin: 0 0;
+ }
+
+ .ss-style-doublediagonal::before {
+  height: 50%;
+  background: #116094;
+  transform: rotate(-3deg);
+  transform-origin: 3% 0;
+ }
+
 .misVis {
   padding-left: 3em;
   padding-right: 3em;
@@ -27,7 +60,15 @@
   height: auto;
   margin-bottom: 2em;
   border-radius: 5%;
+}
 
+.concertPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 5%;
 }
 
 #ourPics {
@@ -437,7 +478,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .display-1 {
@@ -596,6 +637,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 @media (min-width: 576px) {
@@ -8540,6 +8582,11 @@ button.bg-dark:focus {
   margin-right: 0.5rem !important;
 }
 
+.mx-25 {
+  margin-right: 0.35rem !important;
+  margin-left: 0.35rem !important;
+}
+
 .mb-2,
 .my-2 {
   margin-bottom: 0.5rem !important;
@@ -8768,6 +8815,11 @@ button.bg-dark:focus {
 .pl-5,
 .px-5 {
   padding-left: 3rem !important;
+}
+
+.px-6 {
+  padding-right: 3.5rem !important;
+  padding-left: 3.5rem !important;
 }
 
 .m-n1 {
@@ -10625,6 +10677,12 @@ hr.divider {
   border-color: #f4623a;
 }
 
+hr.divider2 {
+  max-width: 5rem;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
 hr.light {
   border-color: #fff;
 }
@@ -10644,6 +10702,10 @@ hr.light {
 
 .page-section {
   padding: 6rem 0;
+}
+
+#concertaudition {
+
 }
 
 #mainNav {
@@ -10669,6 +10731,7 @@ hr.light {
   padding: 0.75rem 0;
   transition: 0.15s;
 }
+
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item {
   color: #b50707;
@@ -10722,7 +10785,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(60, 30, 30, 0.8) 0%, rgba(70, 60, 60, 0.8) 100%), url("../img/green.jpg");
+  background: linear-gradient(to bottom, rgba(60, 30, 30, 0.8) 0%, rgba(70, 60, 60, 0.8) 100%), url("../img/fall2019photo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10803,4 +10866,26 @@ header.masthead h1 {
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.georgia {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+hr.sep-3::after {
+  content: '♫';
+  font-size: 1.7rem;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: white;
 }

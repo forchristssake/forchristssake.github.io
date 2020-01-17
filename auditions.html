@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -43,7 +43,7 @@
               <a class="nav-link" href="members.html">Members</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="auditions.html">Audition <span class="sr-only">(current)</span> </a>
+              <a class="nav-link js-scroll-trigger" href="#page-top">Auditions <span class="sr-only">(current)</span> </a>
             </li>
           </ul>
         </div>
@@ -60,12 +60,38 @@
     <div class="container">
       <div class="px-3">
         <h1>Audition For Us!</h1>
-        <p class="lead">Who should audition for FCS?</p>
-        <p>Anyone who loves the Lord, loves to sing, and loves to praise and serve the Lord through music. And pray about it! FCS is a very time-consuming commitment, but it is also very rewarding, and God does so much in our group every single year! <br>
-        If that describes you, we'd love to have you audition for us!  
-        </p>
-        <p>Right now, For Christ's Sake A Cappella is looking for all voice parts to audition for the 2019-2020 year! It's geared up to be an exciting year, with a new skit, many new songs, and venturing into new territories. Sign up for an audition time slot <a href="https://fcsacappella.youcanbook.me/">HERE!</a></p> 
-        <p>If you have any particular questions or concerns, you can contact us at our email, <a href="mailto:fcsberkeley@gmail.com">fcsberkeley@gmail.com</a>.</p>
+
+        <div class="row align-items-center mt-4">
+          <div class="col-lg-6 order-lg-1">
+            <p class="lead">Who should audition for FCS?</p>
+            <p>Anyone who loves the Lord, loves to sing, and loves to praise and serve the Lord through music. And pray about it! FCS is a very time-consuming commitment, but it is also very rewarding, and God does so much in our group every single year! If that describes you, we'd love to have you audition for us!  
+            </p>
+
+
+            <!-- Auditions are Open
+            <p>Right now, For Christ's Sake A Cappella is looking for all voice parts to audition for the 2019-2020 year! It's geared up to be an exciting year, with a new skit, many new songs, and venturing into new territories. Sign up for an audition time slot <a href="https://fcsacappella.youcanbook.me/">HERE!</a></p> 
+            -->
+
+
+            <!-- Auditions not Open -->
+            <p>
+              Currently, For Christ's Sake is not looking for new members. Auditions typically happen at the beginning of each semester, so watch out for when that time comes around!
+            </p>
+
+
+            <p>If you have any particular questions or concerns, you can contact us at our email, <a href="mailto:fcsberkeley@gmail.com">fcsberkeley@gmail.com</a>.</p>
+          </div>
+
+
+          <div class="col-lg-6 order-lg-2">
+            <img class="img-fluid concertPic my-3" src="img/fcm.jpg" alt="">
+          </div>
+        </div>
+
+
+
+
+        
       </div>
       
     </div>
@@ -138,43 +164,51 @@
 
   <!-- Footer -->
   <footer class="bg-light py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 text-xs-center text-left text-muted footer-section small">
-            <p class="mb-1">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site. <br> </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center text-md-left text-muted footer-section small mb-md-0 mb-4 px-5">
+          <p class="mb-2">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site. <br> </p>
 
-            <a href="https://www.ocf.berkeley.edu">
-                <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
-                    alt="Hosted by the OCF" style="border: 0;" />
+          <a href="https://www.ocf.berkeley.edu">
+              <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
+                  alt="Hosted by the OCF" style="border: 0;" />
+          </a>
+
+
+        </div>
+        <div class="col-md-4 text-center text-secondary footer-section mb-md-0 mb-4 align-self-center">
+          <h6>Follow us!</h6>
+          <div class="social-icon" style="font-size: 2.3em">
+            <a target="_blank" title="follow us on facebook" href="https://www.facebook.com/fcsacappella" style="color: DodgerBlue">
+              <i class="fab fa-facebook"></i>
             </a>
-
-
-          </div>
-          <div class="col-sm-4 text-center text-secondary footer-section">
-            <h6>Follow us!</h6>
-            <div class="social-icon" style="font-size: 2.3em">
-              <a target="_blank" title="follow us on facebook" href="https://www.facebook.com/fcsacappella" style="color: DodgerBlue">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a target="_blank" title="follow us on youtube" href="https://www.youtube.com/fcsberkeley" style="color: Crimson">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a target="_blank" title="follow us on instagram" href="https://www.instagram.com/fcsacappella" style="color: SandyBrown">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4 text-center text-muted footer-section">
-            Copyright &copy; 2019 <br>
-            For Christ's Sake A Cappella
+            <a target="_blank" title="follow us on youtube" href="https://www.youtube.com/fcsberkeley" style="color: Crimson">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a target="_blank" title="follow us on instagram" href="https://www.instagram.com/fcsacappella" style="color: SandyBrown">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
+        <div class="col-md-4 text-center text-muted footer-section align-self-center">
+          Copyright &copy; 2019 <br>
+          For Christ's Sake A Cappella
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
 
 </body>
 
