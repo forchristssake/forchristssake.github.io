@@ -7089,6 +7089,10 @@ button.bg-dark:focus {
   border: 1px solid #dee2e6 !important;
 }
 
+.border2 {
+  border: 2px solid #abafb3 !important;
+}
+
 .border-top {
   border-top: 1px solid #dee2e6 !important;
 }
