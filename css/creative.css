@@ -5054,14 +5054,23 @@ input[type="button"].btn-block {
 }
 
 .card-img-top {
-  /* max-width: 100%; */
+  max-width: 100%;
   height: 35vh;
-  /* height: 100%; */
-  /* height: 240px; */
   margin-left: auto;
   margin-right: auto;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+}
+
+@media only screen and (max-width: 768px) {
+  .card-img-top {
+    max-width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
 }
 
 .card-img-top-alum {
